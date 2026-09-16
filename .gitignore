@@ -1,0 +1,63 @@
+# Unity generated data (all projects)
+/[Uu]nityProjects/*/[Ll]ibrary/
+/[Uu]nityProjects/*/[Tt]emp/
+/[Uu]nityProjects/*/[Oo]bj/
+/[Uu]nityProjects/*/[Ll]ogs/
+/[Uu]nityProjects/*/[Uu]ser[Ss]ettings/
+/[Uu]nityProjects/*/[Bb]uild/
+/[Uu]nityProjects/*/[Bb]uilds/
+/[Uu]nityProjects/*/[Mm]emoryCaptures/
+/[Uu]nityProjects/*/[Rr]ecordings/
+/[Uu]nityProjects/*/Assets/AssetStoreTools*
+
+# IDE and generated project files
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.opendb
+*.VC.db
+
+# Local note tooling
+.obsidian/
+.claudian/
+
+# OS / temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+~$*
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# References: directory README files and analysis Markdown only
+/References/**
+!/References/**/
+!/References/**/README.md
+!/References/**/analysis/**/*.md
+
+# Authoring assets: directory documentation only
+/SourceAssets/**
+!/SourceAssets/**/
+!/SourceAssets/**/README.md
+/LocalAssets/
+
+# Local project planning document
+/GameTechArtLab_PROJECT_BRIEF_CN.md
+
+# Local agent instructions
+/AGENTS.md
+/.agents/
