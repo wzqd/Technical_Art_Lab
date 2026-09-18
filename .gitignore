@@ -43,17 +43,11 @@ Desktop.ini
 .env.*
 !.env.example
 
-# References: directory README files and analysis Markdown only
-/References/**
-!/References/**/
-!/References/**/README.md
-!/References/**/analysis/**/*.md
-
-# Authoring assets: directory documentation only
-/SourceAssets/**
-!/SourceAssets/**/
-!/SourceAssets/**/README.md
+# Local analysis inputs, authoring assets and helper tools
+/References/
+/SourceAssets/
 /LocalAssets/
+/Tools/
 
 # Local project planning document
 /GameTechArtLab_PROJECT_BRIEF_CN.md
