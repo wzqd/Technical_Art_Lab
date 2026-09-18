@@ -12,13 +12,15 @@
 
 ## 当前进度
 
-项目基础工程与资源目录已建立，首个实验正在准备中：
+项目基础工程与资源目录已建立，首个实验已创建最小场景：
 
 | 实验 | 研究问题 | 状态 |
 | --- | --- | --- |
-| 001 · Balatro Card Hover | 修改四顶点 Quad 的 clip-space w，如何产生随鼠标变化的透视感？ | 待实现 |
+| 001 · Balatro Card Hover | 修改四顶点 Quad 的 clip-space w，如何产生随鼠标变化的透视感？ | Minimal 已验证；原作匹配待补证据 |
 
-后续将随实验完成补充演示、实现说明和学习笔记。
+实验入口：`Assets/_Lab/Experiments/001_BalatroCardHover/Scenes/001_CardHover_Minimal.unity`。进入 Play 后移动鼠标，或用 0–4 切换固定状态。实现与证据见 [实验笔记](Notes/TANotes/Experiments/001_BalatroCardHover.md)。
+
+Shader Graph 对照入口：同目录 `001_CardHover_ShaderGraph.unity`。运行时可切换 HLSL 和 Shader Graph 材质；节点说明见 [Shader Graph 实现](Notes/TANotes/Experiments/001_BalatroCardHover_ShaderGraph.md)。当前 DX11 固定相机下，六组状态的两版输出逐像素一致。
 
 ## 打开项目
 
