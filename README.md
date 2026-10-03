@@ -19,6 +19,9 @@
 | 001 · Balatro Card Hover | 修改四顶点 Quad 的 clip-space w，如何产生随鼠标变化的透视感？ | Minimal 已验证；原作匹配待补证据 |
 | 002 · Balatro Card Dissolve | 同一程序化遮罩如何表现进入与退出？ | 独立 Minimal；双向溶解、边缘着色与同步阴影 |
 | 003 · Balatro Card Drag | 鼠标目标如何驱动位置跟随、速度倾斜与释放回位？ | 独立 Minimal；预留抓取/释放事件 |
+| 004 · Dissolve Particles | 卡面和粒子如何共用场数据，从消融边缘发射？ | 独立改进版；退出粒子、进入保留 |
+| 005 · Card Integrated | 悬停、拖拽、离位计时和溶解如何协调？ | 独立整合版；离位锁定计时、溶解前松手取消 |
+| 006 · Low-res 3D Pixelated | 内部分辨率与放大采样如何改变实时 3D 轮廓与运动细节？ | Minimal 已验证；四档分辨率、Point/Bilinear、正交/透视与平移回放 |
 
 实验入口：`Assets/_Lab/Experiments/001_BalatroCardHover/Scenes/001_CardHover_Minimal.unity`。进入 Play 后移动鼠标，或用 0–4 切换固定状态。实现与证据见 [实验笔记](Notes/TANotes/Experiments/001_BalatroCardHover.md)。
 
@@ -29,6 +32,10 @@ Shader Graph 对照入口：同目录 `001_CardHover_ShaderGraph.unity`。运行
 003 入口：`Assets/_Lab/Experiments/003_BalatroCardDrag/Scenes/003_CardDrag_Minimal.unity`。进入 Play 后按住卡片拖动；`R` 复位、`T` 固定轨迹回放、Space 暂停回放。参数与组合接口见 [003 实验笔记](Notes/TANotes/Experiments/003_BalatroCardDrag.md)。
 
 ## 打开项目
+
+004 菜单：`TechArtLab > 004 > Create or Open Minimal`。Play 后 `1` 退出并发射粒子、`2` 进入、`R` 复位、Space 暂停。见 [004 笔记](Notes/TANotes/Experiments/004_BalatroDissolveParticles.md)。
+
+005 菜单：`TechArtLab > 005 > Create or Open Minimal`。按住卡牌拖离原位，1 秒后开始溶解；溶解前松手取消，溶解后松手留在释放位置消失。`R` 复位、`T` 回放、Space 暂停。见 [005 笔记](Notes/TANotes/Experiments/005_BalatroCardIntegrated.md)。
 
 使用 Unity Hub 打开 `UnityProjects/URPTALab`。
 
@@ -42,3 +49,5 @@ Shader Graph 对照入口：同目录 `001_CardHover_ShaderGraph.unity`。运行
 - `Notes/TANotes`：实验记录与概念笔记。
 
 仓库保留学习笔记和可运行的实验实现。用于分析的原始视频、抓帧、美术源文件和本地辅助工具不随仓库分发。
+
+006 菜单：`TechArtLab > 006 > Create or Open Minimal`。Play 后 `1–4` 切换分辨率、`B` 切换滤波、`N` 原生分辨率对照、`O` 切换投影；右键旋转、滚轮缩放、`F/R` 恢复等距视角、`T` 慢速平移。见 [006 笔记](Notes/TANotes/Experiments/006_LowRes3DPixelated.md)；后续六项规划见 [3D 风格与程序动画路线](Notes/TANotes/Experiments/3D像素风格与程序动画实验路线.md)。
