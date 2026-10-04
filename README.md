@@ -22,6 +22,8 @@
 | 004 · Dissolve Particles | 卡面和粒子如何共用场数据，从消融边缘发射？ | 独立改进版；退出粒子、进入保留 |
 | 005 · Card Integrated | 悬停、拖拽、离位计时和溶解如何协调？ | 独立整合版；离位锁定计时、溶解前松手取消 |
 | 006 · Low-res 3D Pixelated | 内部分辨率与放大采样如何改变实时 3D 轮廓与运动细节？ | Minimal 已验证；四档分辨率、Point/Bilinear、正交/透视与平移回放 |
+| 007 · Pixel-stable 3D | 固定正交视角下如何稳定采样并减小平移跳格？ | Minimal 已验证；连续、对齐、补偿三视图，四档分辨率与保护边 |
+| 008 · Lo-fi Low-poly | 几何、法线与配色分别如何影响低模风格？ | Minimal 已验证；三级网格、Flat/Smooth、4/6/8 色、光照与分辨率对照 |
 
 实验入口：`Assets/_Lab/Experiments/001_BalatroCardHover/Scenes/001_CardHover_Minimal.unity`。进入 Play 后移动鼠标，或用 0–4 切换固定状态。实现与证据见 [实验笔记](Notes/TANotes/Experiments/001_BalatroCardHover.md)。
 
@@ -51,3 +53,7 @@ Shader Graph 对照入口：同目录 `001_CardHover_ShaderGraph.unity`。运行
 仓库保留学习笔记和可运行的实验实现。用于分析的原始视频、抓帧、美术源文件和本地辅助工具不随仓库分发。
 
 006 菜单：`TechArtLab > 006 > Create or Open Minimal`。Play 后 `1–4` 切换分辨率、`B` 切换滤波、`N` 原生分辨率对照、`O` 切换投影；右键旋转、滚轮缩放、`F/R` 恢复等距视角、`T` 慢速平移。见 [006 笔记](Notes/TANotes/Experiments/006_LowRes3DPixelated.md)；后续六项规划见 [3D 风格与程序动画路线](Notes/TANotes/Experiments/3D像素风格与程序动画实验路线.md)。
+
+007 菜单：`TechArtLab > 007 > Create or Open Minimal`。Play 后 `0` 三视图比较，`1/2/3` 单独放大，Space 暂停，`R` 复位，`T` 开关平移，`L` 切换阴影；右键拖动画面可平移。见 [007 实验笔记](Notes/TANotes/Experiments/007_PixelStable3D.md)。
+
+008 菜单：`TechArtLab > 008 > Create or Open Minimal`。Play 后 `1/2/3` 切换细分，`N` 切换法线，`P` 切换底色色板，`V` 切换诊断视图，`L` 切换阴影，`R` 复位；右键旋转，滚轮缩放。见 [008 实验笔记](Notes/TANotes/Experiments/008_LoFiLowPoly.md)。
