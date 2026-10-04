@@ -24,6 +24,8 @@
 | 006 · Low-res 3D Pixelated | 内部分辨率与放大采样如何改变实时 3D 轮廓与运动细节？ | Minimal 已验证；四档分辨率、Point/Bilinear、正交/透视与平移回放 |
 | 007 · Pixel-stable 3D | 固定正交视角下如何稳定采样并减小平移跳格？ | Minimal 已验证；连续、对齐、补偿三视图，四档分辨率与保护边 |
 | 008 · Lo-fi Low-poly | 几何、法线与配色分别如何影响低模风格？ | Minimal 已验证；三级网格、Flat/Smooth、4/6/8 色、光照与分辨率对照 |
+| 009 · Procedural Creature 3D | 身体移动时，脚如何交替落地并保持腿长？ | Minimal 已验证；世界脚锚点、对角步态、解析 IK、参数与帧率对照 |
+| 010 · Hybrid Sprite + Procedural | 像素精灵如何获得由运动驱动的次级动作？ | Minimal 已验证；固定/动态围巾对照、弹性节点链、阻尼、受力与频率验证 |
 
 实验入口：`Assets/_Lab/Experiments/001_BalatroCardHover/Scenes/001_CardHover_Minimal.unity`。进入 Play 后移动鼠标，或用 0–4 切换固定状态。实现与证据见 [实验笔记](Notes/TANotes/Experiments/001_BalatroCardHover.md)。
 
@@ -57,3 +59,7 @@ Shader Graph 对照入口：同目录 `001_CardHover_ShaderGraph.unity`。运行
 007 菜单：`TechArtLab > 007 > Create or Open Minimal`。Play 后 `0` 三视图比较，`1/2/3` 单独放大，Space 暂停，`R` 复位，`T` 开关平移，`L` 切换阴影；右键拖动画面可平移。见 [007 实验笔记](Notes/TANotes/Experiments/007_PixelStable3D.md)。
 
 008 菜单：`TechArtLab > 008 > Create or Open Minimal`。Play 后 `1/2/3` 切换细分，`N` 切换法线，`P` 切换底色色板，`V` 切换诊断视图，`L` 切换阴影，`R` 复位；右键旋转，滚轮缩放。见 [008 实验笔记](Notes/TANotes/Experiments/008_LoFiLowPoly.md)。
+
+009 菜单：`TechArtLab > 009 > Create or Open Minimal`。Play 后自动回放，`T` 切换 WASD 手动移动，Space 暂停，`.` 单步，`G` 切换落脚标记，`R` 复位；右键旋转，滚轮缩放。见 [009 实验笔记](Notes/TANotes/Experiments/009_ProceduralCreature3D.md)。
+
+010 菜单：`TechArtLab > 010 > Create or Open Minimal`。Play 后上下对照固定/动态围巾；`T` 切换手动，`A/D` 移动、`J` 小跳，Space 暂停，`.` 单步，`N` 切换节点，`R` 复位。见 [010 实验笔记](Notes/TANotes/Experiments/010_HybridSpriteProcedural.md)。
